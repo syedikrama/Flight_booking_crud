@@ -8,6 +8,7 @@ import { Component } from 'react';
 import Booking from './Components/Booking';
 import Show from './Components/Show';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Full_datails from './Components/Full_datails';
 
 
 
@@ -18,6 +19,8 @@ function App() {
       <Routes>
           <Route path='/' element={<Show />}/>
           <Route path='/booking' element={<Booking />}/>
+          <Route path='/full_details/:id' element={<Full_datails />}/>
+
 
 
       </Routes>
